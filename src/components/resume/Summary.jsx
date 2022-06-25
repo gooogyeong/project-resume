@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { createElement } from 'react'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import profilePic from '../../assets/img/profile.jpg'
+import profilePic from '../../public/img/profile.jpg'
 
 function Summary () {
   return (

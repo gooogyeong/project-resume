@@ -1,6 +1,6 @@
 import Resume from './components/resume/index.jsx'
 import './App.css'
-import GlobalStyle from './assets/style/GloablStyle'
+import GlobalStyle from './public/style/GloablStyle'
 
 function App() {
   return (
