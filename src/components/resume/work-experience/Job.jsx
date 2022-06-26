@@ -3,7 +3,7 @@ import { CgPin, CgCalendar } from 'react-icons/cg'
 import Pill from '../../shared/Pill'
 
 const Job = (props) => {
-  const { jobTitle, company, date, location, responsibilities } = props.job
+  const { jobTitle, company, date, location, responsibilities, intro } = props.job
   return (
     <StyledJob className="job-wrapper block">
       <div className="job__title subtitle">{jobTitle}</div>
@@ -20,6 +20,7 @@ const Job = (props) => {
           <span>{location}</span>
         </div>
       </div>
+      {/*<div className="job__intro">{intro || 'Here, I...'}</div>*/}
       <ul>
         {responsibilities.map((res, idx) => {
          return (
@@ -28,7 +29,6 @@ const Job = (props) => {
                <span>{res.desc}</span>
                {res.stacks.map(stack => <Pill key={stack} text={stack}/>)}
              </div>
-             {/*<div key={idx} className="pill-wrapper">{res.stacks.map(stack => <Pill key={stack} text={stack}/>)}</div>*/}
            </li>
          )
         })}
@@ -56,20 +56,8 @@ const StyledJob = styled.div`
         padding: 0.2rem 0.4rem;
         &:first-child {
           border: 2px solid red !important;
-          //margin-left: 0.8rem;
-        }
-        &:not(:last-child) {
-          //margin-right: 0.4rem;
         }
       }
-      //.resp__desc {
-      //  margin-bottom: 0.4rem;
-      //}
-      //.pill-wrapper {
-      //  display: flex;
-      //  gap: 0.4rem;
-      //  font-size: 1.4rem;
-      //}
     }
   }
 
@@ -81,6 +69,10 @@ const StyledJob = styled.div`
     &__date-location-wrapper {
       margin: 0.8rem 0;
     }
+    
+    //&__intro {
+    //  white-space: pre;
+    //}
   }
 `
 
