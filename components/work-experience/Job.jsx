@@ -8,7 +8,7 @@ const Job = (props) => {
     <StyledJob className="job-wrapper block">
       <div className="job__title subtitle">{jobTitle}</div>
       {company.href
-        ? <a href={company.href} target="_blank" className="job__company-name"><i><b>{company.name}</b></i></a>
+        ? <a href={company.href} target="_blank" rel="noreferrer" className="job__company-name"><i><b>{company.name}</b></i></a>
         : <b className="job__company-name">{company.name}</b>}
       <div className="dates-location-wrapper">
         <div>
