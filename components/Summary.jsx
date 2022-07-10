@@ -1,34 +1,32 @@
 import styled from 'styled-components'
 import { createElement } from 'react'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import profilePic from '../public/profile.jpg'
 
 function Summary () {
   return (
-    <div>summary</div>
-    // <StyledSummary className="summary-wrapper">
-    //   <div className="title">Minkyung Lee</div>
-    //   <img src={profilePic}/>
-    //   <div className="subtitle">Web Frontend Developer</div>
-    //   <ul>
-    //     {contacts.map((contact, idx) => {
-    //       return (
-    //         <li key={idx} className="contact-wrapper">
-    //           {createElement(contact.icon, { size: '1.6rem' })}
-    //           {contact.href ?
-    //             <a
-    //               href="contact.href"
-    //               target="_blank"
-    //               className="contact"
-    //             >
-    //               {contact.name}
-    //             </a> :
-    //             <span className="contact">{contact.value}</span>}
-    //         </li>
-    //       )
-    //     })}
-    //   </ul>
-    // </StyledSummary>
+    <StyledSummary className="summary-wrapper">
+      <div className="title">Minkyung Lee</div>
+      <img src='../profile.jpg'/>
+      <div className="subtitle">Web Frontend Developer</div>
+      <ul>
+        {contacts.map((contact, idx) => {
+          return (
+            <li key={idx} className="contact-wrapper">
+              {createElement(contact.icon, { size: '1.6rem' })}
+              {contact.href ?
+                <a
+                  href="contact.href"
+                  target="_blank"
+                  className="contact"
+                >
+                  {contact.name}
+                </a> :
+                <span className="contact">{contact.value}</span>}
+            </li>
+          )
+        })}
+      </ul>
+    </StyledSummary>
   )
 }
 
