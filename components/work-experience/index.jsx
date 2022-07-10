@@ -113,7 +113,6 @@ function Index () {
       company: { name: 'Colavoground', href: '' },
       date: 'Jun 2022 - current',
       location: 'Seoul, South Korea',
-      // intro: 'At Colavoground, one of partners of Codestates Bootcamp, I  had a great opportunity to experience hands-on development right after my education.\nHere, I...',
       responsibilities: [
         { desc: 'Developed a web link page for users to make appointment with hair dresser using corporate mobile app', stacks: ['React.js', 'Typescript', 'Firebase Realtime database'] }
       ]

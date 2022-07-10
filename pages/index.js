@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Summary from './Summary.jsx'
-import Education from './education/index.jsx'
-import Skill from './Skill.jsx'
-import WorkExperience from './work-experience/index.jsx'
+import Summary from '../components/Summary.jsx'
+import Education from '../components/education/index.jsx'
+import Skill from '../components/Skill.jsx'
+import WorkExperience from '../components/work-experience/index.jsx'
 
 function Resume () {
   return (
