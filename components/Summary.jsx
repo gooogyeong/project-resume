@@ -43,6 +43,10 @@ const StyledSummary = styled.div`
 
   ul {
     padding-inline-start: 0 !important;
+    
+    svg {
+      margin-right: 0.4rem;
+    }
   }
 
   .contact-wrapper {
