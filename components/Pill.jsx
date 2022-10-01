@@ -56,6 +56,11 @@ const getPillStyle = (text) => {
         borderColor: '#FFCA2B',
         color: '#F5820D'
       }
+    case 'Storybook':
+      return {
+        borderColor: '#FE4685',
+        color: '#FE4685'
+      }
   }
   if (text.includes('Vue')) {
     return {
