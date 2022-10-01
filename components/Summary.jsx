@@ -33,7 +33,6 @@ function Summary () {
 const StyledSummary = styled.div`
   text-align: left;
   padding-bottom: 0.8rem;
-  //border: 2px solid red;
 
   img {
     max-width: 100%;
