@@ -14,6 +14,14 @@ function Index () {
       location: 'Seoul, South Korea',
       responsibilities: [
         {
+          desc: 'Developing framework-independent web component to be used across multiple admin web apps',
+          stacks: ['JavaScript', 'HTML', 'CSS', 'yarn workspaces']
+        },
+        {
+          desc: 'Setup storybook and added stories of color palette, reusable components for consistent design system throughout multiple admin web apps',
+          stacks: ['Storybook']
+        },
+        {
           desc: 'Migrated 50+ CRUD menus of AngularJS admin web app to new framework',
           stacks: ['Vue.js']
         },
@@ -22,11 +30,11 @@ function Index () {
           stacks: ['Vue.js', 'Typescript', 'VueX']
         },
         {
-          desc: 'Added html editor in admin web app and WebView pages in mobile apps to create, update, delete and show new announcements for mobile app users of company\'s own',
+          desc: 'Added html editor to AngularJS admin web app to create, update, and delete WebView announcements to users of company\'s own app',
           stacks: ['Vue.js']
         },
         {
-          desc: 'Added new menus to admin web app to read, update user data that are using newly released service',
+          desc: 'Added new APIs to Node.js server to retrieve data of users using newly released feature',
           stacks: ['AngularJS']
         },
         {
@@ -34,11 +42,11 @@ function Index () {
           stacks: ['node.js', 'Express.js']
         },
         {
-          desc: 'Optimized Vue.js project code build, reducing build time by half from 6 min to 3 min via code splitting, replacing CommonJS npm moduels with ES6 modules, to facilitate treeshaking',
+          desc: 'Optimized build time of Vue.js app by half, from 6 min to 3 min, by code splitting, and faciliating treeshaking via replacing CommonJS npm modules with ES6 modules',
           stacks: []
         },
         {
-          desc: 'Tested data consistency of migrated data',
+          desc: 'Added test cases with Jest to test data consistency of migrated data',
           stacks: ['Jest']
         }
       ]
@@ -46,10 +54,11 @@ function Index () {
     {
       jobTitle: 'Freelancer Web Developer',
       company: { name: 'level19.io', href: 'https://level19.io' },
-      date: 'Jun 2020 - current',
+      date: 'Jun 2022 - Aug 2022',
       location: 'remote',
       responsibilities: [
-        { desc: 'Developing UI/UX of a corporate landing page', stacks: ['HTML', 'CSS', 'Vanilla JS'] },
+        { desc: 'Developed reusable, framework-independent web component', stacks: ['HTML', 'CSS', 'JavaScript'] },
+        { desc: 'Developed 3D animation', stacks: ['three.js'] },
         { desc: 'Hosting', stacks: ['AWS S3', 'AWS CloudFront', 'AWS Route 53', 'GoDaddy domain'] }
       ]
     },

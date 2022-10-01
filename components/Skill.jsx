@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Pill from './Pill'
 
 const Skill = () => {
-  const stacks = ['Vue.js', 'React.js', 'Vanilla JS', 'Git', 'Notion', 'Firebase']
+  const stacks = ['Vue.js', 'React.js', 'JavaScript', 'Git', 'Firebase']
   return (
     <StyledSkill>
       <div className="title">Skills</div>
