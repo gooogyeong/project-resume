@@ -9,8 +9,8 @@ const Job = (props) => {
     <StyledJob className="job-wrapper block">
       <div className="job__title subtitle">{jobTitle}</div>
       <div className="job__links">
-        {links.map(({ href, name }) => (
-          <a href={href} target="_blank" rel="noreferrer"><b>{href ? <IoMdLink class="link"/> : null}{name}</b></a>
+        {links.map(({ href, name }, idx) => (
+          <a href={href} target="_blank" rel="noreferrer" key={idx}><b>{href ? <IoMdLink class="link"/> : null}{name}</b></a>
         ))}
       </div>
       <div className="dates-location-wrapper">
