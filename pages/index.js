@@ -18,7 +18,7 @@ function Resume () {
         <div>
           <div className="title">About me</div>
           <div>
-            <div style={{ fontSize: '1.6rem', 'marginBottom': '2rem' }}>Hello, I am Minkyung Lee, applying for a Frontend Developer position at
+            <div style={{ fontSize: '1.6rem', 'marginBottom': '2rem' }}>Hello, I am Minkyung, applying for a Frontend Developer position at
               Momenterie.<br/>
               For following reasons, I find myself a fit for this position!
             </div>
