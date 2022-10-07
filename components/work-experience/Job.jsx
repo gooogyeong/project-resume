@@ -1,15 +1,18 @@
 import styled from 'styled-components'
 import { CgPin, CgCalendar } from 'react-icons/cg'
+import { IoMdLink } from 'react-icons/io'
 import Pill from '../Pill'
 
 const Job = (props) => {
-  const { jobTitle, company, date, location, responsibilities } = props.job
+  const { jobTitle, links, date, location, responsibilities } = props.job
   return (
     <StyledJob className="job-wrapper block">
       <div className="job__title subtitle">{jobTitle}</div>
-      {company.href
-        ? <a href={company.href} target="_blank" rel="noreferrer" className="job__company-name"><i><b>{company.name}</b></i></a>
-        : <b className="job__company-name">{company.name}</b>}
+      <div className="job__links">
+        {links.map(({ href, name }) => (
+          <a href={href} target="_blank" rel="noreferrer"><b>{href ? <IoMdLink class="link"/> : null}{name}</b></a>
+        ))}
+      </div>
       <div className="dates-location-wrapper">
         <div>
           <CgCalendar/>
@@ -42,6 +45,7 @@ const StyledJob = styled.div`
 
   svg {
     color: #CCCCCC;
+    margin-right: 0.4rem;
   }
 
   ul {
@@ -55,35 +59,29 @@ const StyledJob = styled.div`
         font-size: 1.4rem;
         margin-left: 0.8rem;
         padding: 0.2rem 0.4rem;
-
-        &:first-child {
-          border: 2px solid red !important;
-          //margin-left: 0.8rem;
-        }
-
-        &:not(:last-child) {
-          //margin-right: 0.4rem;
-        }
       }
-
-      //.resp__desc {
-      //  margin-bottom: 0.4rem;
-      //}
-      //.pill-wrapper {
-      //  display: flex;
-      //  gap: 0.4rem;
-      //  font-size: 1.4rem;
-      //}
     }
   }
 
   .job {
-    &__company-name, &__date-location-wrapper {
+    &__links {
+      a, b {
+        display: block;
+        padding-left: 0.4rem;
+        font-size: 2rem;
+        margin: 0.4rem 0 1rem;
+      }
+    }
+
+    &__date-location-wrapper {
       padding-left: 0.4rem;
+      font-size: 2rem;
+      margin: 0.4rem 0;
     }
 
     &__date-location-wrapper {
       margin: 0.8rem 0;
+      font-size: 1.6rem;
     }
   }
 `

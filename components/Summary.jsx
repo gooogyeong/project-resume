@@ -6,7 +6,7 @@ function Summary () {
   return (
     <StyledSummary className="summary-wrapper">
       <div className="title">Minkyung Lee</div>
-      <img src='../profile.jpg'/>
+      {/*<img src='../profile.jpg'/>*/}
       <div className="subtitle">Web Frontend Developer</div>
       <ul>
         {contacts.map((contact, idx) => {
