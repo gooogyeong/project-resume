@@ -3,6 +3,8 @@ import Summary from '../components/Summary.jsx'
 import Education from '../components/education/index.jsx'
 import Skill from '../components/Skill.jsx'
 import WorkExperience from '../components/work-experience/index.jsx'
+import Pill from '../components/Pill.jsx'
+import { IoMdLink } from 'react-icons/io'
 
 function Resume () {
   return (
@@ -16,34 +18,34 @@ function Resume () {
         <div>
           <div className="title">About me</div>
           <div>
-            <div style={{ fontSize: '1.6rem', 'margin': '1rem 0' }}>Hello, I am Minkyung Lee, applying for a Frontend Developer position at
+            <div style={{ fontSize: '1.6rem', 'marginBottom': '2rem' }}>Hello, I am Minkyung, applying for a Frontend Developer position at
               Momenterie.<br/>
               For following reasons, I find myself a fit for this position!
             </div>
             <div className="subtitle">Qualification<br/></div>
             <ul>
-              <li>I have 2+ years of professional experience as a web frontend developer and mainly used Vue.js.<br/>
-                I migrated AngularJS app to Vue2 and now I'm developing new B2B app in Vue3.
+              <li style={{ lineHeight: '2.4rem' }}>I have 2+ years of professional experience as a web frontend developer and wrote most of the codes in <Pill text='Vue.js'/>.<br/>
+                I migrated AngularJS app to Vue2 and now I&apos;m developing new B2B app in Vue3.
               </li>
-              <li>I have experience making web editor.<br/>
-                At work, I built an AngularJS web editor, which creates notice pages in HTML. Those notices were inserted as a
-                WebView into company's own app on a weekly basis.<br/>
+              <li style={{ lineHeight: '2.4rem' }}>I have professional experience making web editors.<br/>
+                At work, I built an AngularJS web editor, with which admins create notice pages in HTML. Those notices are updated on a daily basis, inserted as a
+                WebView into company&apos;s own Android & iOS app.<br/>
                 During side project, I made another web editor in React. With this editor, authors of the project created posts
-                that include image, video, footnote, link, etc.
+                that include various media, such as image, video, footnote, link, etc. (<a href="https://modern-grotesque-times.web.app/write/guest"><IoMdLink style={{ color: '#CCCCCC' }}/> web editor for guest writer</a>)
               </li>
             </ul>
             <div className="subtitle">Culture</div>
             <ul>
-              <li>I was happy to know that the head of engineering wrote the job description. I've always wanted to be
+              <li style={{ lineHeight: '2.4rem' }}>I was happy to know that the head of engineering wrote the job description. I&apos;ve always wanted to be
                 part
-                of a team with lead or senior frontend developers, whom I can ask if there's a better way to do things.
+                of a team with lead or senior frontend developers, whom I can ask if there&apos;s a better way to do things.
               </li>
             </ul>
             <div className="subtitle">Product</div>
             <ul>
-              <li>I was thrilled about the idea that if I join Momenterie, what I develop will be used by end
+              <li style={{ lineHeight: '2.4rem' }}>I was thrilled about the idea that if I join Momenterie, what I develop will be used by end
                 users.<br/>
-                I've always wanted to be challenged and learn from real user experiences and go beyond the scope of
+                I&apos;ve always wanted to be challenged and learn from real user experiences and go beyond the scope of
                 admins, colleague developers and qa team.
               </li>
             </ul>
@@ -65,9 +67,11 @@ const StyledResume = styled.div`
     font-size: 2.4rem;
     text-align: left;
     padding: 0.8rem 0;
+    margin-bottom: 2rem;
   }
 
   .subtitle {
+    margin-bottom: 1rem;
     font-size: 2rem;
     padding: 0.4rem 0;
   }

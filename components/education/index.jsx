@@ -4,6 +4,13 @@ import EducationItem from './EducationItem'
 const Education = () => {
   const educations = [
     {
+      degree: 'Bachelor of Engineering',
+      fieldOfStudy: 'Computer Engineering',
+      school: { name: 'Academic Credit Bank System', href: 'https://www.cb.or.kr/creditbank/info/nInfo7_1.do' },
+      dates: 'Feb 2022 - Now',
+      location: 'remote'
+    },
+    {
       degree: 'Bootcamp',
       fieldOfStudy: 'Web Development',
       school: { name: 'Codestates', href: 'https://codestates.com/#/courses/immersive' },
@@ -44,6 +51,9 @@ const Education = () => {
 }
 
 const StyledEducation = styled.div`
+  svg {
+    margin-right: 0.4rem;
+  }
 `
 
 export default Education

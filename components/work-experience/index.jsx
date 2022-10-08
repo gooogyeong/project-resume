@@ -6,10 +6,10 @@ function Index () {
   const jobs = [
     {
       jobTitle: 'Junior Web Frontend Developer',
-      company: {
+      links: [{
         name: 'Modu Company Inc.',
         href: ''
-      },
+      }],
       date: 'Aug 2020 - current',
       location: 'Seoul, South Korea',
       responsibilities: [
@@ -53,7 +53,9 @@ function Index () {
     },
     {
       jobTitle: 'Freelancer Web Developer',
-      company: { name: 'level19.io', href: 'https://level19.io' },
+      links: [
+        { name: 'level19.io', href: 'https://level19.io' }
+      ],
       date: 'Jun 2022 - Aug 2022',
       location: 'remote',
       responsibilities: [
@@ -64,7 +66,11 @@ function Index () {
     },
     {
       jobTitle: 'Freelancer Web Developer',
-      company: { name: 'moderngrotesquetimes.com', href: 'https://moderngrotesquetimes.com' },
+      links: [
+        { name: 'moderngrotesquetimes.com', href: 'https://moderngrotesquetimes.com' },
+        { name: 'MGT web editor for guest writer', href: 'https://moderngrotesquetimes.com/write/guest' },
+        { name: 'https://github.com/gooogyeong/MGT', href: 'https://github.com/gooogyeong/MGT' }
+      ],
       date: 'May 2021 - Sep 2021',
       location: 'remote',
       responsibilities: [
@@ -91,12 +97,16 @@ function Index () {
         {
           desc: 'Hosting',
           stacks: ['Firebase Hosting', 'Gabia domain']
+        },
+        {
+          desc: 'GitHub (https://github.com/gooogyeong/MGT)',
+          stacks: ['GitHub']
         }
       ]
     },
     {
       jobTitle: 'Freelancer Web Developer',
-      company: { name: 'yeouidotour.com', href: 'https://yeouidotour.com' },
+      links: [{ name: 'yeouidotour.com', href: 'https://yeouidotour.com' }],
       date: 'Jul 2021 - Aug 2021',
       location: 'remote',
       responsibilities: [
@@ -110,7 +120,7 @@ function Index () {
     },
     {
       jobTitle: 'Freelancer Web Developer',
-      company: { name: 'greentester.co.kr', href: 'http://greentester.co.kr' },
+      links: [{ name: 'greentester.co.kr', href: 'http://greentester.co.kr' }],
       date: 'Apr 2021 - May 2021',
       location: 'remote',
       responsibilities: [
@@ -119,11 +129,14 @@ function Index () {
     },
     {
       jobTitle: 'Intern Web Developer',
-      company: { name: 'Colavoground', href: '' },
+      links: [{ name: 'Colavoground', href: '' }],
       date: 'Jun 2022 - current',
       location: 'Seoul, South Korea',
       responsibilities: [
-        { desc: 'Developed a web link page for users to make appointment with hair dresser using corporate mobile app', stacks: ['React.js', 'Typescript', 'Firebase Realtime database'] }
+        {
+          desc: 'Developed a web link page for users to make appointment with hair dresser using corporate mobile app',
+          stacks: ['React.js', 'Typescript', 'Firebase Realtime database']
+        }
       ]
     }
   ]
