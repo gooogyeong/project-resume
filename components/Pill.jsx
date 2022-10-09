@@ -32,6 +32,12 @@ const getPillStyle = (text) => {
         color: 'white',
         borderColor: '#404F61'
       }
+    case 'Vue Test Utils':
+      return {
+        ...defaultStyle,
+        backgroundColor: 'white',
+        borderColor: '#404F61'
+      }
     case 'React.js':
       return {
         ...defaultStyle,

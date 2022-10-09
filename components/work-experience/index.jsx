@@ -19,7 +19,7 @@ function Index () {
         },
         {
           desc: 'Writing unit tests for UI/UX components',
-          stacks: ['Vue.js', 'Jest']
+          stacks: ['Vue Test Utils', 'Jest']
         },
         {
           desc: 'Setup storybook and added stories of color palette, reusable components for consistent design system throughout multiple admin web apps',
@@ -106,10 +106,6 @@ function Index () {
         {
           desc: 'Hosting',
           stacks: ['Firebase Hosting', 'Gabia domain']
-        },
-        {
-          desc: 'GitHub (https://github.com/gooogyeong/MGT)',
-          stacks: ['GitHub']
         }
       ]
     },
