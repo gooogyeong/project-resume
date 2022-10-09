@@ -15,7 +15,11 @@ function Index () {
       responsibilities: [
         {
           desc: 'Developing framework-independent web component to be used across multiple admin web apps',
-          stacks: ['JavaScript', 'HTML', 'CSS', 'yarn workspaces']
+          stacks: ['JavaScript', 'HTML', 'CSS', 'Yarn Workspaces']
+        },
+        {
+          desc: 'Writing unit tests for UI/UX components',
+          stacks: ['Vue.js', 'Jest']
         },
         {
           desc: 'Setup storybook and added stories of color palette, reusable components for consistent design system throughout multiple admin web apps',
@@ -61,6 +65,7 @@ function Index () {
       responsibilities: [
         { desc: 'Developed reusable, framework-independent web component', stacks: ['HTML', 'CSS', 'JavaScript'] },
         { desc: 'Developed 3D animation', stacks: ['three.js'] },
+        { desc: 'Developed UI/UX responsive to 3 screen sizes: desktop, tablet, mobile', stacks: ['HTML', 'CSS', 'JavaScript'] },
         { desc: 'Hosting', stacks: ['AWS S3', 'AWS CloudFront', 'AWS Route 53', 'GoDaddy domain'] }
       ]
     },
@@ -75,8 +80,12 @@ function Index () {
       location: 'remote',
       responsibilities: [
         {
-          desc: 'Developed UI/UX of website as a part of art project to post art critics and web novels',
+          desc: 'Developed website as a part of art project to post art critics and web novels',
           stacks: ['React.js', 'Typescript', 'MobX']
+        },
+        {
+          desc: 'Developed UI/UX responsive to 2 screen sizes: desktop, mobile',
+          stacks: ['CSS']
         },
         {
           desc: 'Designed DB architecture, APIs to create, update, search, read posts',
@@ -111,9 +120,10 @@ function Index () {
       location: 'remote',
       responsibilities: [
         {
-          desc: 'Developed UI/UX of website as a part of art project exhibited at Seoul Museum of Art (https://sema.seoul.go.kr/kr/whatson/exhibition/detail)',
+          desc: 'Developed website as a part of art project exhibited at Seoul Museum of Art (https://sema.seoul.go.kr/kr/whatson/exhibition/detail)',
           stacks: ['React.js']
         },
+        { desc: 'Developed UI/UX responsive to 2 screen sizes: desktop, mobile', stacks: ['CSS'] },
         { desc: 'Added styled map with gps pins', stacks: ['Mapbox GL JS'] },
         { desc: 'Hosting', stacks: ['Firebase Hosting', 'Cafe24 domain'] }
       ]
@@ -124,7 +134,8 @@ function Index () {
       date: 'Apr 2021 - May 2021',
       location: 'remote',
       responsibilities: [
-        { desc: 'Developed UI/UX of a corporate landing page', stacks: ['Vue.js'] }
+        { desc: 'Developed a corporate landing page responsive to 3 sizes: desktop, tablet, mobile', stacks: ['Vue.js', 'CSS'] },
+        { desc: 'Developed UI/UX responsive to 2 screen sizes: desktop, mobile', stacks: ['CSS'] },
       ]
     },
     {
